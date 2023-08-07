@@ -1,0 +1,2 @@
+Bernardo Campeonato,28/10/2002,Campeonato do Bernardo,masculino,Bernardo,20,futebol,26,coletivo,Ipatingao,Ipatinga,100,Tailor x Jhon/20:00,Amador;
+Jojo,23/10/2003,Jojo,feminino,Jojo,30,futsal,14,coletivo,Ipatingao,Ipatinga,100,Profissional;
