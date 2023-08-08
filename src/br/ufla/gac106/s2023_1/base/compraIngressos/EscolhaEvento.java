@@ -41,7 +41,7 @@ public class EscolhaEvento extends JanelaBase {
         CampeonatosPos campeonatoSelecionadoObjeto = eventos.get(campeonatoSelecionado);
         janelaEscolhaAtividade = new EscolhaAtividade(campeonatoSelecionadoObjeto);
         janelaEscolhaAtividade.setVisible(true);
-
+        setVisible(false);
         return false;
     }
 

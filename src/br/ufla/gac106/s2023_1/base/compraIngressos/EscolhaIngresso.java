@@ -47,10 +47,11 @@ public class EscolhaIngresso extends JanelaBase {
             this.partida.venderIngresso(quantidadeIngressosComprados);
             gerarPDF(quantidadeIngressosComprados);
             aoFinalizar();
-        } else if (quantidadeIngressosComprados > this.arena.getCapacidadeArena()) {
+        } else if (quantidadeIngressosComprados > this.arena.getCapacidadeArena() || quantidadeIngressosComprados<0) {
             janelaConferirIngresso = new ConferirIngresso();
         }
         janelaConferirIngresso.setVisible(true);
+        setVisible(false);
         return false;
     }
 

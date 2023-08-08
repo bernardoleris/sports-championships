@@ -28,34 +28,4 @@ public class ConferirIngresso extends JanelaBase {
         return true;
     }
 
-    /*
-     * private void gerarPdfIngressos() {
-     * // Cria o objeto do documento PDF
-     * Document document = new Document();
-     * try {
-     * // Cria o escritor do documento
-     * PdfWriter.getInstance(document, new FileOutputStream("ingressos.pdf"));
-     * 
-     * // Ajusta o tamanho da página
-     * document.setPageSize(PageSize.A4);
-     * 
-     * // Abre o documento
-     * document.open();
-     * 
-     * // Adiciona os ingressos ao documento
-     * for (Ingresso ingresso : ingressos) {
-     * document.add(new Paragraph("Nome do evento: " + ingresso.getNomeEvento()));
-     * document.add(new Paragraph("Data: " + ingresso.getData()));
-     * document.add(new Paragraph("Local: " + ingresso.getLocal()));
-     * document.add(new Paragraph("-------------------------------------------"));
-     * }
-     * 
-     * // Fecha o documento
-     * document.close();
-     * System.out.println("O arquivo PDF com os ingressos foi gerado com sucesso.");
-     * } catch (DocumentException | FileNotFoundException e) {
-     * e.printStackTrace();
-     * }
-     * }
-     */
 }

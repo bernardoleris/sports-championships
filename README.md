@@ -110,21 +110,26 @@ Preencha os campos abaixo de acordo com as intruções dadas.
 ## Diagrama UML
 ```mermaid
 classDiagram
-    App <-- InterfaceUsuario
-    InterfaceUsuario <-- Administracao
-    Administracao <-- Campeonato
-    Administracao <-- Arena
-    Administracao <-- Partida
-    Administracao <-- Esporte
-    Campeonato <|-- Profissional
-    Campeonato <|-- Amador
+    App --> InterfaceUsuario
+    InterfaceUsuario --> Administracao
+    Administracao --> Campeonato
+    Administracao --> Arena
+    Administracao --> Partida
+    Administracao --> Esporte
+    Campeonato --|> Profissional
+    Campeonato --|> Amador
 
-    App <-- TelaUsuario
-    TelaUsuario <-- CampeonatoPos
-    JanelaBase <|-- TelaUsuario
-    JanelaBase <|-- EscolhaIngresso
-    JanelaBase <|-- EscolhaEvento
-    JanelaBase <|-- EscolhaAtividade
-    JanelaBase <|-- ConferirIngresso
+    Administracao --> TelaUsuario
+    TelaUsuario --> CampeonatoPos
+    JanelaBase --|> TelaUsuario
+    JanelaBase --|> EscolhaIngresso
+    JanelaBase --|> EscolhaEvento
+    JanelaBase --|> EscolhaAtividade
+    JanelaBase --|> ConferirIngresso
+
+    TelaUsuario --> EscolhaEvento
+    EscolhaEvento --> EscolhaAtividade
+    EscolhaAtividade --> EscolhaIngresso
+    EscolhaIngresso --> ConferirIngresso
 ```
 

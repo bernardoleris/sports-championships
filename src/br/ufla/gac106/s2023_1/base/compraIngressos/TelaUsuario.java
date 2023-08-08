@@ -23,6 +23,7 @@ public class TelaUsuario extends JanelaBase{
     @Override
     protected boolean aoAvancar() {
         janelaEscolhaEvento.setVisible(true);
+        setVisible(false);
         return false;
     }
     

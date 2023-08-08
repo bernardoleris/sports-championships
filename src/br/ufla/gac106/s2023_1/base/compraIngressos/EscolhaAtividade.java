@@ -52,6 +52,7 @@ public class EscolhaAtividade extends JanelaBase {
         janelaEscolhaIngresso = new EscolhaIngresso(
                 this.campeonato.getPartidas().get(this.listaPartidas.getSelectedIndex()), this.campeonato.getArena());
         janelaEscolhaIngresso.setVisible(true);
+        setVisible(false);
         return false;
     }
 
